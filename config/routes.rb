@@ -2,7 +2,11 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :books
-  root :to => "books#index"
+  resources :products
+  resources :categories
+
+  root :to => "products#index"
+  # root :to => "books#index"
   # root '#books/index'
 
   get 'static_pages/home'
