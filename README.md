@@ -5,9 +5,15 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.4.1
+
+* Rails version: 5.2.2.1
 
 * System dependencies
+  - paperclip  ( image and file uploads )
+  - devise  ( security )
+  - bootstrap-sass ( design )
+  - rspec-rails ( For testing )
 
 * Configuration
 
