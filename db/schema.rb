@@ -32,20 +32,6 @@ ActiveRecord::Schema.define(version: 2019_04_02_004723) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "products", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
-    t.string "author"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "category_id"
-    t.string "product_img_file_name"
-    t.string "product_img_content_type"
-    t.integer "product_img_file_size"
-    t.datetime "product_img_updated_at"
-    t.integer "user_id"
-  end
-
   create_table "reviews", force: :cascade do |t|
     t.integer "rating"
     t.text "comment"
